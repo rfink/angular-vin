@@ -1,0 +1,20 @@
+{
+  "author": "Ryan Fink",
+  "name": "angular-vin",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rfink/angular-vin",
+  "description": "VIN (vehicle identification number) validator and input directive",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rfink/angular-vin.git"
+  },
+  "dependencies": {
+    "angular": ">= 1.0.7"
+  },
+  "devDependencies": {
+    "angular-scenario": ">= 1.0.7",
+    "angular-mocks": ">= 1.0.7"
+  },
+  "main": "./dist/angular-vin.js",
+  "ignore": ["./node_modules/"]
+}

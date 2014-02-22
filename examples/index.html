@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Angular VIN - Example Page</title>
+</head>
+<body ng-app="vinTest" ng-controller="TestController">
+<form name="form">
+  <input type="text" vin-input vin-is-valid="isValid" name="vin" ng-model="vin" />
+  <div ng-show="form.vin.$error.emptyvin">Empty vin</div>
+  <div ng-show="form.vin.$error.invalidlength">Vin too short</div>
+  <div ng-show="form.vin.$error.invalidchars">Invalid characters</div>
+  <div ng-show="form.vin.$error.invalidcheckdigit">Check digit does not match</div>
+</form>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../dist/assets/angular-vin.js"></script>
+<script>
+  (function(window, angular, undefined) {
+
+    function TestController($scope) {
+      $scope.isValid = function(vin) {
+        console.log('Done!');
+      };
+    }
+
+    angular.module('vinTest', ['angular-vin'])
+           .controller('TestController', TestController);
+
+  }(window, angular));
+</script>
+</body>
+</html>
