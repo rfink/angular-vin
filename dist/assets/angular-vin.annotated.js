@@ -108,6 +108,9 @@
     function vinInputController(scope, el, attrs, ctrl) {
       el.attr('maxlength', vinValidatorService.vinLength);
       function checkChars(val) {
+        if (!val) {
+          return val;
+        }
         var replace = new RegExp(vinValidatorService.replaceRegEx, 'g');
         var newVal = val.replace(replace, '');
         if (newVal !== val) {
