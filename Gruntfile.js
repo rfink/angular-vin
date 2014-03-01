@@ -43,7 +43,7 @@ module.exports = function configure(grunt) {
      * `less` is our main stylesheet.
      */
     src: {
-      js: [ 'index.js', 'src/**/*.js' ],
+      js: [ 'index.js', 'src/services/*.js', 'src/directives/*.js' ],
       unit: [ 'tests/unit/**/*.test.js' ]
     },
 
