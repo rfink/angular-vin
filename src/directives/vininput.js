@@ -51,7 +51,7 @@ function vinInputDirective(vinValidatorService) {
         if (scope.vinIsValid) {
           scope.vinIsValid(vin);
         }
-        return;
+        return vin;
       }
       ctrl.$setValidity(check.errCode, false);
       return vin;
