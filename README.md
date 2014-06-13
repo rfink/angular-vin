@@ -14,7 +14,11 @@ Usage
 
 First, you can add to your bower.json if you want to use that:
 
-    "angular-vin": "git://github.com/rfink/angular-vin"
+    "angular-vin": "git://rfink/angular-vin"
+
+Or simply run
+
+    bower install angular-vin
 
 Angular-vin only requires angular (in production).
 To use in your angular app, add "angular-vin" to your dependencies:
