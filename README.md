@@ -14,7 +14,7 @@ Usage
 
 First, you can add to your bower.json if you want to use that:
 
-    "angular-vin": "git://rfink/angular-vin"
+    "angular-vin": "rfink/angular-vin"
 
 Or simply run
 
