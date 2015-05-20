@@ -5,9 +5,9 @@
   <title>Angular VIN - Example Page</title>
 </head>
 <body ng-app="vinTest" ng-controller="TestController">
-<form name="form">
-  <input type="text" vin-input vin-is-valid="isValid" name="vin" ng-model="vin" />
-  <div ng-show="form.vin.$error.emptyvin">Empty vin</div>
+<form name="form" novalidate>
+  <input type="text" vin-input vin-is-valid="isValid" name="vin" ng-model="vin" required />
+  <div ng-show="form.vin.$error.required">Empty</div>
   <div ng-show="form.vin.$error.invalidlength">Vin too short</div>
   <div ng-show="form.vin.$error.invalidchars">Invalid characters</div>
   <div ng-show="form.vin.$error.invalidcheckdigit">Check digit does not match</div>

@@ -121,4 +121,4 @@ function vinValidatorService() {
 }
 
 angular.module('angular-vin')
-       .factory('vinValidatorService', vinValidatorService);
+  .factory('vinValidatorService', vinValidatorService);

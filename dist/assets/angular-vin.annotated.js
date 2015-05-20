@@ -131,10 +131,12 @@
         return val;
       }
       function onInput(vin) {
-        ctrl.$setValidity('emptyvin', true);
         ctrl.$setValidity('invalidlength', true);
         ctrl.$setValidity('invalidchars', true);
         ctrl.$setValidity('invalidcheckdigit', true);
+        if (!vin) {
+          return vin;
+        }
         var check = vinValidatorService.validate(vin);
         if (check.valid) {
           ctrl.$setPristine();

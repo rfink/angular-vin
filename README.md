@@ -10,7 +10,7 @@ alphanumeric and NOT contain the letters I, Q, or O (likely to
 avoid confusion with numbers).
 
 Usage
-==============
+===========
 
 First, you can add to your bower.json if you want to use that:
 
@@ -34,7 +34,6 @@ VIN is successfully input and validate.  Also, the module sets
 
 ```html
     <input vin-input vin-is-valid="onValid" name="vin" ng-model="vin" />
-    <div ng-show="form.vin.$error.emptyvin">Empty vin</div>
     <div ng-show="form.vin.$error.invalidlength">Vin too short</div>
     <div ng-show="form.vin.$error.invalidchars">Invalid characters</div>
     <div ng-show="form.vin.$error.invalidcheckdigit">Check digit does not match</div>
@@ -73,3 +72,18 @@ properties relating to VIN validation.  These are:
 + replaceRegEx - "[^A-HJ-NPR-Z0-9]"
 + characterMap - map of alphabet characters to numeric value
 + weights - weights based on index position
+
+
+Testing
+===========
+
+```
+  grunt karma
+```
+
+Building
+===========
+
+```
+  grunt build
+```
