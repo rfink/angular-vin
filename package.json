@@ -1,8 +1,8 @@
 {
   "name": "angular-vin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A VIN validator for angular",
-  "main": "index.js",
+  "main": "dist/assets/angular-vin.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/rfink/angular-vin.git"
